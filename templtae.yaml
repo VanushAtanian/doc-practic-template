@@ -8,6 +8,6 @@ metadata:
     - empty
     - documentation
     - discovery
-spec:
-  owner: thd@edocumentation.com
-  type: service
+# spec:
+#   owner: thd@edocumentation.com
+#   type: service
