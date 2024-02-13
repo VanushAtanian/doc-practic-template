@@ -1,5 +1,5 @@
 apiVersion: scaffolder.backstage.io/v1beta3
-kind: Templat
+kind: Template
 
 metadata:
   name: doc-empty-template
