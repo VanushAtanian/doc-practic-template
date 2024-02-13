@@ -12,18 +12,18 @@ spec:
   owner: thd@documentation.com
   type: service
 
-  parameters:
-    - title: Choose a location
-      required:
-        - repoUrl
-      properties:
-        repoUrl:
-          title: Repository Location
-          type: string
-          ui:field: RepoUrlPicker
-          ui:options:
-            allowedHosts:
-              - github.com
+  # parameters:
+  #   - title: Choose a location
+  #     required:
+  #       - repoUrl
+  #     properties:
+  #       repoUrl:
+  #         title: Repository Location
+  #         type: string
+  #         ui:field: RepoUrlPicker
+  #         ui:options:
+  #           allowedHosts:
+  #             - github.com
 
   steps:
     # - id: publish
