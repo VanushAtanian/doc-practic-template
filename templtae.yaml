@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
-metadata:
+# metadata:
   # name: doc-empty-template
   # title: Empty Template
-  description: First Step - Learn How To Create Empty Template
+  # description: First Step - Learn How To Create Empty Template
   # tags:
   #   - emmpty
   #   - discovery
