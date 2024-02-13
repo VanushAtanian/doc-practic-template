@@ -10,7 +10,7 @@ metadata:
   #   - backstage
 spec:
   # owner: thd@documentation.com
-  type: documentation
+  type: dummy
 
   # parameters:
   #   - title: Choose a location
@@ -34,8 +34,8 @@ spec:
     #     description: This is the repository
     #     repoUrl: ${{ parameters.repoUrl }}
 
-    - id: register
-      name: Register
+    # - id: register
+    - name: Register
       action: debug:log
     #   input:
     #     message: ${{ steps['publish'].output.remoteUrl }}
