@@ -1,41 +1,11 @@
 apiVersion: scaffolder.backstage.io/v1beta3
-kind: Template
+kind: Templat
+
 metadata:
   name: doc-empty-template
-  # title: Empty Template
-  # description: First Step - Learn How To Create Empty Template
-  # tags:
-  #   - emmpty
-  #   - discovery
-  #   - backstage
+
 spec:
-  # owner: thd@documentation.com
   type: dummy
 
-  # parameters:
-  #   - title: Choose a location
-  #     required:
-  #       - repoUrl
-  #     properties:
-  #       repoUrl:
-  #         title: Repository Location
-  #         type: string
-  #         ui:field: RepoUrlPicker
-  #         ui:options:
-  #           allowedHosts:
-  #             - github.com
-
   steps:
-    # - id: publish
-    #   name: Publish
-    #   action: publish:github
-    #   input:
-    #     allowedHosts: ["github.com"]
-    #     description: This is the repository
-    #     repoUrl: ${{ parameters.repoUrl }}
-
-    - id: register
-      name: Register
-    # - action: debug:log
-    #   input:
-    #     message: ${{ steps['publish'].output.remoteUrl }}
+    - action: debug:log
