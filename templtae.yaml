@@ -26,13 +26,13 @@ spec:
               - github.com
 
   steps:
-    - id: publish
-      name: Publish
-      action: publish:github
-      input:
-        allowedHosts: ["github.com"]
-        description: This is the repository
-        repoUrl: ${{ parameters.repoUrl }}
+    # - id: publish
+    #   name: Publish
+    #   action: publish:github
+    #   input:
+    #     allowedHosts: ["github.com"]
+    #     description: This is the repository
+    #     repoUrl: ${{ parameters.repoUrl }}
 
     - id: register
       name: Register
