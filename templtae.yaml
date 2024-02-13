@@ -10,7 +10,7 @@ metadata:
   #   - backstage
 spec:
   # owner: thd@documentation.com
-  type: service
+  # type: service
 
   # parameters:
   #   - title: Choose a location
