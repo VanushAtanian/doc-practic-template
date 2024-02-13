@@ -8,9 +8,14 @@ metadata:
     - empty
     - documentation
     - discovery
-    
+
 spec:
   owner: thd@edocumentation.com
   type: service
 
 steps:
+  - id: register
+      name: Register
+      action: debug:log
+      input:
+        message: "Registered"
