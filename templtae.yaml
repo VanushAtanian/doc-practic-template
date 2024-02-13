@@ -4,10 +4,10 @@ metadata:
   name: doc-empty-template
   title: Empty Template
   description: First Step - Learn How To Create Empty Template
-  tags:
-    - emmpty
-    - discovery
-    - backstage
+  # tags:
+  #   - emmpty
+  #   - discovery
+  #   - backstage
 spec:
   owner: thd@documentation.com
   type: service
