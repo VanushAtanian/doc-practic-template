@@ -5,17 +5,37 @@ metadata:
   title: Empty Template
   description: First Step - Learn How To Create Empty Template
   tags:
-    - empty
-    - documentation
+    - emmpty
     - discovery
-
+    - backstage
 spec:
-  owner: thd@edocumentation.com
+  owner: thd@documentation.com
   type: service
 
-steps:
-  - id: register
+  parameters:
+    - title: Choose a location
+      required:
+        - repoUrl
+      properties:
+        repoUrl:
+          title: Repository Location
+          type: string
+          ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts:
+              - github.com
+
+  steps:
+    - id: publish
+      name: Publish
+      action: publish:github
+      input:
+        allowedHosts: ["github.com"]
+        description: This is the repository
+        repoUrl: ${{ parameters.repoUrl }}
+
+    - id: register
       name: Register
       action: debug:log
       input:
-        message: "Registered"
+        message: ${{ steps['publish'].output.remoteUrl }}
