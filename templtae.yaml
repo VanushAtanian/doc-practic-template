@@ -35,7 +35,7 @@ spec:
     #     repoUrl: ${{ parameters.repoUrl }}
 
     # - id: register
-    - name: Register
-      action: debug:log
+    # - name: Register
+    - action: debug:log
     #   input:
     #     message: ${{ steps['publish'].output.remoteUrl }}
