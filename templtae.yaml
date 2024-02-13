@@ -9,7 +9,7 @@ metadata:
   #   - discovery
   #   - backstage
 spec:
-  owner: thd@documentation.com
+  # owner: thd@documentation.com
   type: service
 
   # parameters:
