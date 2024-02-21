@@ -3,6 +3,7 @@ kind: Template
 
 metadata:
   name: doc-basis-template
+  title: A More Human-Readable Title
 
 spec:
   type: basis
