@@ -6,9 +6,9 @@ metadata:
   title: A More Human-Readable Title
   description: This template does nothing and has no usage but being example in the documentation.
   tags:
-    - exampleTagGold
-    - exampleTagSilver
-    - exampleTagAny
+    - example
+    - gold
+    - edu
 
 spec:
   type: basis
