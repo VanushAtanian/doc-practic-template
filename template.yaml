@@ -17,9 +17,7 @@ metadata:
 
 spec:
   type: basis
-  lifecycle: production
   owner: employee.ldap@homedepot.com
-  system: public-websites
 
   steps:
     - action: debug:log
