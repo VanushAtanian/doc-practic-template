@@ -18,7 +18,7 @@ metadata:
 spec:
   type: basis
   lifecycle: production
-  owner: artist-relations-team
+  owner: employee.ldap@homedepot.com
   system: public-websites
 
   steps:
