@@ -5,6 +5,8 @@ metadata:
   name: doc-basis-template
   title: A More Human-Readable Title
   description: This template does nothing and has no usage but being example in the documentation.
+  labels:
+    example.com/custom: custom_label_value
   tags:
     - example
     - gold
