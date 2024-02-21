@@ -17,6 +17,9 @@ metadata:
 
 spec:
   type: basis
+  lifecycle: production
+  owner: artist-relations-team
+  system: public-websites
 
   steps:
     - action: debug:log
