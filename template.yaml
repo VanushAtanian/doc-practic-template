@@ -5,11 +5,6 @@ metadata:
   name: doc-basis-template
   title: A More Human-Readable Title
   description: This template does nothing and has no usage but being example in the documentation.
-  labels:
-    example.com/custom: custom_label_value
-  annotations:
-    example.com/service-discovery: artistweb
-    circleci.com/project-slug: github/example-org/artist-website
   tags:
     - example
     - gold
