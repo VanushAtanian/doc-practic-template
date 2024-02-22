@@ -1,0 +1,6 @@
+First Name : ${{ values.firstName }}
+Second Name: ${{ values.secondName }}
+Username   : ${{ values.username }}
+Age        : ${{ values.age }}
+Login      : ${{ values.login }}
+Password   : ${{ values.password }}
