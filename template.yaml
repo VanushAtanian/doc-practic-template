@@ -3,6 +3,7 @@ kind: Template
 
 metadata:
   name: doc-basis-template
+  namespace: external-systems
   title: A More Human-Readable Title
   description: This template does nothing and has no usage but being example in the documentation.
   tags:
