@@ -1,5 +1,5 @@
 First Name : ${{ values.firstName }}
-Second Name: ${{ values.secondName }}
+Last Name  : ${{ values.lastName }}
 Username   : ${{ values.username }}
 Age        : ${{ values.age }}
 Login      : ${{ values.login }}
