@@ -9,6 +9,7 @@ metadata:
     - example
     - gold
     - edu
+    - usable
   links:
     - url: https://admin.example-org.com
       title: Admin Dashboard
@@ -16,8 +17,98 @@ metadata:
       type: admin-dashboard
 
 spec:
-  type: basis
+  type: service
   owner: employee.ldap@homedepot.com
 
+  parameters:
+    - title: Provide some simple information
+      required:
+        - firstName
+        - lastName
+        - login
+        - password
+      properties:
+        firstName:
+          title: First Name
+          type: string
+          description: First Name Of The User
+          ui:field: EntityNamePicker
+        lastName:
+          title: Last Name
+          type: string
+          description: Last Name Of The User
+        login:
+          title: Login
+          type: string
+          description: Unique Login
+        password:
+          title: Password
+          type: string
+          description: Password Of The User
+          ui:field: Secret
+        age:
+          title: Age
+          type: string
+          description: How Old Is The User?
+          default: NOT_PROVIDED
+        username:
+          title: Username
+          type: string
+          description: The username will be used as an id of the user
+          default: GUEST_123
+        owner:
+          title: Owner
+          type: string
+          description: Owner of the component
+          ui:field: OwnerPicker
+          ui:options:
+            allowedKinds:
+              - Group
+    - title: Name The Text-File
+      required:
+        - fileName
+      properties:
+        fileName:
+          title: Filename
+          type: string
+          description: The name of the file in which will be inserted values
+    - title: Choose a location
+      required:
+        - repoUrl
+      properties:
+        repoUrl:
+          title: Repository Location
+          type: string
+          ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts:
+              - github.com
+
   steps:
-    - action: debug:log
+    - id: template
+      name: Fetch Skeleton + Template
+      action: fetch:template
+      input:
+        url: ./skeleton
+        values:
+          firstName: ${{ parameters.firstName }}
+          lastName: ${{ parameters.lastName }}
+          username: ${{ parameters.username }}
+          age: ${{ parameters.age }}
+          login: ${{ parameters.login }}
+          password: ${{ parameters.password }}
+          fileName: ${{ parameters.fileName }}
+          owner: ${{ parameters.owner }}
+          destination: ${{ parameters.repoUrl | parseRepoUrl }}
+
+    - id: publish
+      name: Publish
+      action: publish:github
+      input:
+        allowedHosts: ["github.com"]
+        description: This is ${{ parameters.filename }} repository
+        repoUrl: ${{ parameters.repoUrl }}
+
+    - id: register
+      name: Register
+      action: debug:log
