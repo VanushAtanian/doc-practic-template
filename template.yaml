@@ -108,6 +108,6 @@ spec:
         description: This is ${{ parameters.filename }} repository
         repoUrl: ${{ parameters.repoUrl }}
 
-    - id: register
-      name: Register
-      action: debug:log
+    # - id: register
+    #   name: Register
+    #   action: debug:log
