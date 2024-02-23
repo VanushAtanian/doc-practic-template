@@ -2,12 +2,11 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 
 metadata:
-  name: doc-basis-template
-  title: A More Human-Readable Title
-  description: This template does nothing and has no usage but being example in the documentation.
+  name: doc-practice-template
+  title: A Small Example Of Usable Template
+  description: This template will create GH repo with txt file.
   tags:
     - example
-    - gold
     - edu
     - usable
   links:
